@@ -1,0 +1,30 @@
+h1 {
+    color: navy;
+    background: linear-gradient(skyblue, white);
+}
+
+h2 {
+    font-style: italic;
+    border-bottom: 5px solid navy;
+    padding: 10px;
+}
+
+a.hover {
+    color:aquamarine;
+}
+
+div#zentai {
+    display: grid;
+    width: 1200px;
+	grid-template-columns:1fr 1fr;
+	grid-auto-rows: 300px 300px;
+	grid-gap: 10px;
+	flex-direction: row;
+}
+
+div#zentai > div {
+	margin-left: 5px;
+    padding: 10px;
+	border: medium solid violet;
+    border-radius: 12px;
+}
