@@ -15,9 +15,9 @@ h1 {
 
 h2 {
 	font-family: cursive;
+	margin: 0px;
 	color: #3f3faf;
-	background: linear-gradient(to left top, #ffefaf, white);
-	padding: 5px;
+	background: linear-gradient(45deg, white, #ffefaf);
 }
 
 div#zentai {
@@ -30,13 +30,13 @@ div#zentai {
 }
 
 div#zentai > div {
-	margin-left: 5px;
-	background-color: #ffefaf;
+	padding: 5px;
+	background: #ffefaf;
 }
 
 img.sign {
 	float: right;
-	width: 100px;
-    height: 100px;
+	width: 80px;
+    height: 80px;
     margin: 10px 0 10px 10px;
 }
