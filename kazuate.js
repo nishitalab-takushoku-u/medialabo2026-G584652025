@@ -14,11 +14,11 @@ function hantei() {
   // ここから: 予想回数を1増やして，span#kaisu 要素のテキストを更新
   kaisu = kaisu + 1;
   document.querySelector('span#kaisu').textContent = kaisu;
-
   // ここまで: 予想回数を1増やして，span#kaisu 要素のテキストを更新
   
   // ここから: テキストボックスに指定された数値を yoso に代入する
   let yoso = parseInt(document.querySelector('input#nyuuryoku').value);
+  document.querySelector('span#yoso').textContent = yoso;
   // ここまで: テキストボックスに指定された数値を yoso に代入する
   
   // ここから: 正解判定する
