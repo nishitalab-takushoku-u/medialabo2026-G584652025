@@ -1,8 +1,23 @@
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
-
+  for (let i = 0; i < data.results.shop.length; i++) {
+    console.log((i + 1) + "件目の検索結果");
+    console.log("店名: " + data.results.shop[i].name);
+    console.log("住所: " + data.results.shop[i].address);
+    console.log("キャッチコピー: " + data.results.shop[i].catch);
+    console.log("ジャンル: " + data.results.shop[i].genre.name);
+    console.log("予算: " + data.results.shop[i].budget.name);
+    console.log("アクセス: " + data.results.shop[i].access);
+    console.log("営業時間: " + data.results.shop[i].open);
+    console.log("定休日: " + data.results.shop[i].close);
+    console.log("URL: " + data.results.shop[i].urls.pc);
+    console.log("画像URL: " + data.results.shop[i].photo.pc.l);
+    console.log("クーポンURL: " + data.results.shop[i].coupon_urls.pc);
+    console.log("--------------------------------------");
+  }
 }
+
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
