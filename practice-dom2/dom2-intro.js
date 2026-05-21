@@ -35,7 +35,6 @@ function changeDom() {
     l.textContent = '青';
     u.insertAdjacentElement('beforeend', l);
 
-    u.insertAdjacentElement('beforeend', l);
     p = document.querySelector('p#primary');
     p.insertAdjacentElement('afterend', u);
 }
