@@ -91,7 +91,47 @@ let b = document.querySelector('#sendRequest');
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
-  let genre = document.querySelector('#genre').value;
+  let genre_name = document.querySelector('#genre').value;
+  
+  let genre;
+  if (genre_name === '居酒屋') {
+    genre = 'G001';
+  } else if (genre_name === 'ダイニングバー・バル') {
+    genre = 'G002';
+  } else if (genre_name === '創作料理') {
+    genre = 'G003';
+  } else if (genre_name === '和食') {
+    genre = 'G004';
+  } else if (genre_name === '洋食') {
+    genre = 'G005';
+  } else if (genre_name === 'イタリアン・フレンチ') {
+    genre = 'G006';
+  } else if (genre_name === '中華') {
+    genre = 'G007';
+  } else if (genre_name === '焼肉・ホルモン') {
+    genre = 'G008';
+  } else if (genre_name === 'アジア・エスニック料理') {
+    genre = 'G009';
+  } else if (genre_name === '各国料理') {
+    genre = 'G010';
+  } else if (genre_name === 'カラオケ・パーティ') {
+    genre = 'G011';
+  } else if (genre_name === 'バー・カクテル') {
+    genre = 'G012';
+  } else if (genre_name === 'ラーメン') {
+    genre = 'G013';
+  } else if (genre_name === 'カフェ・スイーツ') {
+    genre = 'G014';
+  } else if (genre_name === 'その他グルメ') {
+    genre = 'G015';
+  } else if (genre_name === 'お好み焼き・もんじゃ') {
+    genre = 'G016';
+  } else if (genre_name === '韓国料理') {
+    genre = 'G017';
+  } else {
+    console.log('ジャンルが正しく選択されていません');
+    return;
+  }
   let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/' + genre + '.json';
   //テキストボックスやドロップダウンメニュー、ラジオボタンなどからジャンルを取得して、{genre}の部分を置き換える
 
