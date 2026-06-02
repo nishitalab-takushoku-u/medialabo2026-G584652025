@@ -16,7 +16,6 @@ function print(data) {
     console.log("URL: " + data.results.shop[i].urls.pc);
     console.log("画像URL: " + data.results.shop[i].photo.pc.l);
     console.log("クーポンURL: " + data.results.shop[i].coupon_urls.pc);
-    console.log("--------------------------------------");
   }
 }
 
@@ -35,10 +34,10 @@ function printDom(data) {
   b.insertAdjacentElement('beforeend', d);
 
   for (let i = 0; i < data.results.shop.length; i++) {
+    let h = document.createElement('h2');
+    h.textContent = (i + 1) + "件目の検索結果";
+    d.insertAdjacentElement('beforeend', h);
     let l = document.createElement('li');
-    l.textContent = (i + 1) + "件目の検索結果";
-    d.insertAdjacentElement('beforeend', l);
-    l = document.createElement('li');
     l.textContent = "店名: " + data.results.shop[i].name;
     d.insertAdjacentElement('beforeend', l);
     l = document.createElement('li');
@@ -71,14 +70,11 @@ function printDom(data) {
     l = document.createElement('li');
     l.textContent = "URL: " + data.results.shop[i].urls.pc;
     d.insertAdjacentElement('beforeend', l);
-    l = document.createElement('li');
+    l = document.createElement('a');
     l.textContent = "画像URL: " + data.results.shop[i].photo.pc.l;
     d.insertAdjacentElement('beforeend', l);
     l = document.createElement('li');
     l.textContent = "クーポンURL: " + data.results.shop[i].coupon_urls.pc;
-    d.insertAdjacentElement('beforeend', l);
-    l = document.createElement('li');
-    l.textContent = "--------------------------------------";
     d.insertAdjacentElement('beforeend', l);
   }
 }

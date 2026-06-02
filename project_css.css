@@ -1,7 +1,7 @@
 div#title {
     background-color: lightyellow;
     border-radius: 20px;
-    width: 1024px;
+    width: 800px;
     border: solid red;
     padding: 10px 10px 30px 10px;
     margin: 10px;
@@ -26,6 +26,44 @@ img.yakiniku {
     margin: 10px 10px 0px 10px;
 }
 
-input.genre {
-    
+input#genre {
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    border: solid green;
+}
+
+button#sendRequest {
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    border: solid red;
+    margin-left: 10px;
+}
+
+div#graph {
+    float: right;
+    background-color: lightyellow;
+    border-radius: 20px;
+    width: 300px;
+    border: solid red;
+    padding: 10px 10px 30px 10px;
+    margin: 10px;
+}
+
+div#result {
+    width: 900px;
+    padding: 10px;
+    margin: 10px;
+}
+
+div#result h2 {
+    padding: 10px;
+    border-bottom: 5px solid gray;
+}
+
+div#result li {
+    list-style: none;
 }
